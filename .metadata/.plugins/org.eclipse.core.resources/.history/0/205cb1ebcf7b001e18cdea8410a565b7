@@ -1,0 +1,12 @@
+package classes;
+
+// PARTIE IHM
+public static void main(String[] args) {
+    // Instanciation / Création d'objets de la classe Personne
+    Personne personne1 = new Personne("Alice", 30);
+    Personne personne2 = new Personne("Bob", 25);
+
+    // Appel de la méthode pour afficher les détails
+    personne1.afficherDetails();
+    personne2.afficherDetails();
+}

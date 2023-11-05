@@ -1,0 +1,34 @@
+package classes;
+
+public class Personne {
+	
+	
+	
+	  // Attributs (variables de classe)
+    String nom;
+    int age;
+
+    // Constructeur de notre classe
+    public Personne(String nom, int age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    // Méthode
+    public void afficherDetails() {
+        System.out.println("Nom : " + nom);
+        System.out.println("Âge : " + age);
+    }
+
+    // PARTIE IHM
+    public static void main(String[] args) {
+        // Création d'objets de la classe Personne
+        Personne personne1 = new Personne("Alice", 30);
+        Personne personne2 = new Personne("Bob", 25);
+
+        // Appel de la méthode pour afficher les détails
+        personne1.afficherDetails();
+        personne2.afficherDetails();
+    }
+
+}
