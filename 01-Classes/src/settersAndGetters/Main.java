@@ -1,0 +1,23 @@
+package settersAndGetters;
+
+public class Main {
+
+    // PARTIE IHM
+    public static void main(String[] args) {
+        // Création d'objets de la classe Personne
+        Personne personne1 = new Personne();
+        Personne personne2 = new Personne();
+
+        // Utilisation des setters pour définir les informations de personne1
+        personne1.setNom("Alice Johnson");
+        personne1.setAge(31);
+
+        // Utilisation des getters pour obtenir les informations de personne1
+        System.out.println("Nom de personne1 : " + personne1.getNom());
+        System.out.println("Âge de personne1 : " + personne1.getAge());
+
+        // Appel de la méthode pour afficher les détails
+        personne1.afficherDetails();
+        personne2.afficherDetails();
+    }
+}
